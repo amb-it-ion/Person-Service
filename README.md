@@ -7,34 +7,52 @@ Requires
 * Patience during first install
 
 Start JBoss with 
-```mvn -Pwildfly package cargo:run
+```
+mvn -Pwildfly package cargo:run
+```
 
 Setup user "user" for application realm (default) with
-```<installation>/target/cargo/installs/wildfly-8.2.0.Final/wildfly-8.2.0.Final/bin/add-user
+```
+<installation>/target/cargo/installs/wildfly-8.2.0.Final/wildfly-8.2.0.Final/bin/add-user
+```
 
 Access API at
-```http://localhost:8080/person-service/
+```
+http://localhost:8080/person-service/
+```
 
 Create UUIDs at
-'''https://www.uuidgenerator.net/
+```
+https://www.uuidgenerator.net/
+```
 
 Login at 
-```http://localhost:8080/person-service/login.html
+```
+http://localhost:8080/person-service/login.html
+```
 
 Access monitoring at
-```http://localhost:8080/person-service/moskito-inspect/
+```
+http://localhost:8080/person-service/moskito-inspect/
+```
 * PersonEndpoint will be listed only after first successful API call
 
-Build documentation at 
-`target/site/jqassistant-html with
-with
-```mvn site
+Build documentation at `target/site/jqassistant-html` with
+```
+mvn site
+```
 
 Run jQAssistant with
-```mvn jqassistant:server
+```
+mvn jqassistant:server
+```
 
 Review at
-```http://localhost:7474/
+```
+http://localhost:7474/
+```
 
 Query for 
-```MATCH (t:Type)-[:DECLARES]->(m:Method) RETURN t.fqn AS Type, count(t) AS DeclaredMethods ORDER BY DeclaredMethods DESC LIMIT 20
+```
+MATCH (t:Type)-[:DECLARES]->(m:Method) RETURN t.fqn AS Type, count(t) AS DeclaredMethods ORDER BY DeclaredMethods DESC LIMIT 20
+```
