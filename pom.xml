@@ -157,6 +157,7 @@
 			<plugin>
 				<groupId>com.buschmais.jqassistant.scm</groupId>
 				<artifactId>jqassistant-maven-plugin</artifactId>
+				<version>1.0.0</version>
 				<executions>
 					<execution>
 						<goals>
@@ -172,7 +173,7 @@
 					<dependency>
 						<groupId>com.buschmais.jqassistant.plugin</groupId>
 						<artifactId>jqassistant.plugin.jpa2</artifactId>
-						<version>1.0.0-RC1</version>
+						<version>1.0.0</version>
 					</dependency>
 				</dependencies>
 			</plugin>
@@ -352,6 +353,7 @@
 			<plugin>
 				<groupId>com.buschmais.jqassistant.scm</groupId>
 				<artifactId>jqassistant-maven-plugin</artifactId>
+				<version>1.0.0</version>
 				<reportSets>
 					<reportSet>
 						<reports>
