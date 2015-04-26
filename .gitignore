@@ -1,0 +1,6 @@
+target/
+data/
+.settings/
+.project
+start.bat
+.classpath
